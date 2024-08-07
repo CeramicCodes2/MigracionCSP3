@@ -1,0 +1,701 @@
+{% macro nav()%}
+
+
+
+<header class="container-fluid column">
+    <div style="object-fit:contain;display: flex;justify-content:space-between">
+        <img  src="static/images/Hacienda.jpeg" alt="">
+        <img src="static/images/SAT.png" alt="" width="200">
+    </div>
+<nav class="nav nav-tabs  justify-content-center">
+    <li class="nav-item ">
+    <a class="nav-link active" href="{{url_for('index')}}">Inicio</a>
+    </li>
+    <li class="nav-item ">  
+    <a class="nav-link" href="{{url_for('registrar')}}">Registrar</a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="{{url_for('eventos')}}">Actualizaciones de Quejas</a>
+    </li>
+</nav>
+</header>
+
+{% endmacro %}
+{% macro showMessages()%}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category,message in messages %}
+      <div class="{{category}} flash-message">{{ message }}</div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+{% endmacro%}
+
+{%macro footer()%}
+<footer>
+    <div id="content">      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	 
+
+		
+		
+	
+
+
+
+        <div id="footer">
+           <div class="pw"><div class="social">
+   <a href="https://www.sat.gob.mx/aplicacion/operacion/65837/subastasat.-participa-y-adquiere-bienes-en-las-subastas-del-sat-" target="suba" style="text-decoration:none;">
+       <span style="font-family: SoberanaSans;font-size:25px;font-weight: bolder;display: block;margin:auto;width: 192px;">
+   <p style="display:block; color:white;background-color:#357934;padding: 3px;vertical-align: middle;margin-top: 0;text-align: center;"> SubastaSAT</p></span></a>	
+           
+           <img alt="" src="/satys/img/social_buttons2.jpg" usemap="#socialMap" style="display:block;margin:auto"><map name="socialMap" id="socialMap">
+                   <area shape="circle" coords="21,21,21" href="http://twitter.com/satmx" target="twit">
+                   <area shape="circle" coords="71,21,21" href="http://facebook.com/satmexico" target="face">
+                   <area shape="circle" coords="121,21,21" href="http://youtube.com/satmx" target="yout">
+                   <area shape="circle" coords="171,21,21" href="https://www.instagram.com/satmx/" target="insta">
+               </map>	
+   <br>
+   <a href="http://omawww.sat.gob.mx/BuzonTributario/Paginas/index.html" target="trib" style="text-decoration:none;">
+       <span style="font-family: SoberanaSans;font-size: 0;display: block;margin:auto;width: 192px;">
+   <p style="display:block; color:white;background-color:#357934;padding: 3px;vertical-align: middle;margin-top: 0;text-align: center;"> 
+   
+   <span style="font-size: 18px; font-weight: normal;">Minisitio de</span> <br>
+   <span style="font-size: 20px; font-weight: bolder;">Buzón Tributario</span>
+   
+   </p></span></a>					
+   
+   
+   </div>
+               
+               <div class="txt">
+                   <div class="f_txt">					
+                                           
+                       
+                               <h6>
+                                   Portal de Trámites<br>y Servicios
+                               </h6>
+                               <p>
+                                   <a href="/personas/ultimas-noticias" target="_self">
+                                       Noticias
+                                   </a>	
+                                   <br>
+                                   <a href="/personas/calendario" target="_self">
+                                       Calendario
+                                   </a>	
+                                   <br>
+                                   <a href="/personas/consultas-de-orientacion" target="_self">
+                                       Orientación
+                                   </a>	
+                                   <br>
+                                   <a href="https://www.sat.gob.mx/personas/derechos-de-los-contribuyentes" target="_self">
+                                       Derechos del Contribuyente
+                                   </a>	
+                                   <br>
+                                   <a href="http://omawww.sat.gob.mx/cifras_sat/Paginas/inicio.html" target="1462228516586">
+                                       Datos abiertos
+                                   </a>	
+                                   <br>
+                                   <a href="http://omawww.sat.gob.mx/documentossat/Paginas/AvisodePrivacidadSAT/aviso_de_privacidad_sat.htm" target="1462228516586">
+                                       Aviso de privacidad
+                                   </a>	
+                                   <br>
+                                   <a href="https://aplicacionesc.mat.sat.gob.mx/sat.gob.mx.age.sipreqd.internet/QdTc/inicio.aspx" target="1462228516586">
+                                       Denuncia a factureras
+                                   </a>	
+                                   <br>
+                                   <a href="#" target="_self">
+                                       
+                                   </a>	
+                                   <br>
+                                   <a href="http://omawww.sat.gob.mx/gobmx/Paginas/buscadorcorreosapocrifos/buscador.html" target="1462228516586">
+                                       Buscador de correos falsos
+                                   </a>	
+                                   <br>
+                               </p></div>		
+                   <div class="f_txt">
+                               <h6>
+                                   Buzón Tributario
+                               </h6>
+                               <p>
+                                   <a href="https://wwwmat.sat.gob.mx/personas/login/mis-notificaciones" target="_self">
+                                       Mis notificaciones
+                                   </a>	
+                                   <br>
+                                   <a href="https://wwwmat.sat.gob.mx/personas/login/mis-comunicados" target="_self">
+                                       Mis comunicados
+                                   </a>	
+                                   <br>
+                                   <a href="https://wwwmat.sat.gob.mx/personas/login/mis-documentos" target="_self">
+                                       Mis documentos
+                                   </a>	
+                                   <br>
+                                   <a href="#" target="_self">
+                                       
+                                   </a>	
+                                   <br>
+                                   <a href="https://wwwmat.sat.gob.mx/iniciar-expediente/medios_contacto/" target="1462228439487">
+                                       Habilita tu Buzón <br>Tributario
+                                   </a>	
+                                   <br>
+                                   <a href="#" target="_self">
+                                       
+                                   </a>	
+                                   <br>
+                               </p></div>		
+                   <div class="f_txt">
+                               <h6>
+                                   Enlaces a otros organismos
+                               </h6>
+                               <p>
+                                   <a href="http://www.inai.org.mx" target="1462228753636">
+                                       Instituto Nacional de<br>Transparencia, Acceso a la<br>Información y Protección<br>de Datos Personales
+                                   </a>	
+                                   <br>
+                                   <a href="http://omawww.sat.gob.mx/gobmxtransparencia/Paginas/obligaciones_transparencia.html" target="1462228753636">
+                                       Sistema de Portales de<br>Obligaciones de Transparencia
+                                   </a>	
+                                   <br>
+                                   <a href="http://www.gob.mx/sat" target="1462228753636">
+                                       Portal gob.mx
+                                   </a>	
+                                   <br>
+                                   <a href="https://sidec.funcionpublica.gob.mx/#!/" target="1462228753636">
+                                       Sistema Integral de <br>Denuncias Ciudadanas (SIDEC)
+                                   </a>	
+                                   <br>
+                               </p>                
+                   </div>								 
+                                    
+                   <div class="f_txt">				 
+                       <h6>Contacto</h6>
+                       <p>Av. Hidalgo 77,<br>Col. Guerrero, C.P. 06300,<br>Ciudad de México.</p>
+                       <p>Atención telefónica <br>desde cualquier parte del paí­s:<br>MarcaSAT <a href="tel:55-62-72-27-28">55 627 22 728 </a><br>y para el exterior del país<br><a href="(+52) 55 627 22 728">(+52) 55 627 22 728 </a>
+                       </p>
+                   </div>
+               </div>        	
+               <div class="clear"></div>
+               <div class="links mobile">
+                                               
+                           
+                               <span>
+                                   Portal de Trámites y Servicios
+                                   <p>
+                                       <a href="/personas/ultimas-noticias">
+                                           Noticias
+                                       </a>
+                                       <br>
+                                       <a href="/personas/calendario">
+                                           Calendario
+                                       </a>
+                                       <br>
+                                       <a href="/personas/consultas-de-orientacion">
+                                           Orientación
+                                       </a>
+                                       <br>
+                                       <a href="https://www.sat.gob.mx/personas/derechos-de-los-contribuyentes">
+                                           Derechos del Contribuyente
+                                       </a>
+                                       <br>
+                                       <a href="http://omawww.sat.gob.mx/cifras_sat/Paginas/inicio.html">
+                                           Datos abiertos
+                                       </a>
+                                       <br>
+                                       <a href="http://omawww.sat.gob.mx/documentossat/Paginas/AvisodePrivacidadSAT/aviso_de_privacidad_sat.htm">
+                                           Aviso de privacidad
+                                       </a>
+                                       <br>
+                                       <a href="https://aplicacionesc.mat.sat.gob.mx/sat.gob.mx.age.sipreqd.internet/QdTc/inicio.aspx">
+                                           Denuncia a factureras
+                                       </a>
+                                       <br>
+                                       <a href="#">
+                                           
+                                       </a>
+                                       <br>
+                                       <a href="http://omawww.sat.gob.mx/gobmx/Paginas/buscadorcorreosapocrifos/buscador.html">
+                                           Buscador de correos falsos
+                                       </a>
+                                       <br>	
+                                   </p>
+                               </span>
+                               <span>
+                                   Buzón Tributario
+                                   <p>
+                                       <a href="https://wwwmat.sat.gob.mx/personas/login/mis-notificaciones">
+                                           Mis notificaciones
+                                       </a>
+                                       <br>
+                                       <a href="https://wwwmat.sat.gob.mx/personas/login/mis-comunicados">
+                                           Mis comunicados
+                                       </a>
+                                       <br>
+                                       <a href="https://wwwmat.sat.gob.mx/personas/login/mis-documentos">
+                                           Mis documentos
+                                       </a>
+                                       <br>
+                                       <a href="#">
+                                           
+                                       </a>
+                                       <br>
+                                       <a href="https://wwwmat.sat.gob.mx/iniciar-expediente/medios_contacto/">
+                                           Habilita tu Buzón <br>Tributario
+                                       </a>
+                                       <br>
+                                       <a href="#">
+                                           
+                                       </a>
+                                       <br>	
+                                   </p>
+                               </span>
+                               <span>
+                                   Enlaces a otros organismos
+                                   <p>
+                                       <a href="http://www.inai.org.mx">
+                                           Instituto Nacional de<br>Transparencia, Acceso a la<br>Información y Protección<br>de Datos Personales
+                                       </a>
+                                       <br>
+                                       <a href="http://omawww.sat.gob.mx/gobmxtransparencia/Paginas/obligaciones_transparencia.html">
+                                           Sistema de Portales de<br>Obligaciones de Transparencia
+                                       </a>
+                                       <br>
+                                       <a href="http://www.gob.mx/sat">
+                                           Portal gob.mx
+                                       </a>
+                                       <br>
+                                       <a href="https://sidec.funcionpublica.gob.mx/#!/">
+                                           Sistema Integral de <br>Denuncias Ciudadanas (SIDEC)
+                                       </a>
+                                       <br>	
+                                   </p>
+                               </span><span>Contacto
+                               <p>Av. Hidalgo 77,<br>Col. Guerrero, C.P. 06300,<br>Ciudad de México.</p>
+                               <p> Atención telefónica <br>desde cualquier parte del paí­s:<br>MarcaSAT <a href="tel:55-62-72-27-28">55 627 22 728 </a><br>y para el exterior del país<br><a href="(+52) 55 627 22 728">(+52) 55 627 22 728 </a>
+                               </p>
+                           </span>
+                       </div>
+                   
+               
+           
+           </div>
+       </div> 
+   <div id="pantalla" style="display:none">f</div> 
+       
+   
+   <script>
+   
+   $(document).ready(myfunction);
+   function myfunction() {
+       var w = $(window).width();
+       var cha = $("#myButtonFAQSAT");	
+       if (w>486){
+           cha.insertBefore("#icons #refere");
+         }else{
+             cha.insertBefore("#mob_icons #refere");
+       }
+   
+       var proto  = document.location.protocol || 'http:';
+       var node   = document.createElement('script');
+       node.type  = 'text/javascript';
+       node.async = true;
+       node.src   = proto +  '//webchat-cls30.i6.inconcertcc.com/v3/click_to_chat?token=E53C3AFFBBF0E3D91AA45D8605050A77';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(node, s);
+   
+   }
+   
+   $(window).resize(function(){
+       var cha = $("#myButtonFAQSAT");
+       var w = $(window).width();
+       if (w>486){
+       cha.insertBefore("#icons #refere");
+       }else{
+         cha.insertBefore("#mob_icons #refere");
+       }
+   }); 
+   
+   </script>
+   
+   <script>	
+   $(document).ready(dddd);
+   function dddd() { 
+   
+   var myElem = document.getElementById('myElement');         
+   if (myElem) {
+     var barra= parseInt($( "#myElement" ).css("width"));  
+     if (barra<=480){
+     try {  
+          var iframetoloadTopPosition = jQuery('#breadcrumbs').offset().top;
+          if (iframetoloadTopPosition!=0 )
+               jQuery('html, body').animate({scrollTop: iframetoloadTopPosition}, 500);	
+         } catch(err) {}
+      }
+   }
+   
+   
+   
+   
+       if(typeof SAT_POR_32_init=== 'function') { 
+              SAT_POR_32_init();
+       } 
+      $('#mob_menu_selectBusqueda').selectmenu({change:mobileMenu2}).selectmenu( "menuWidget" ).addClass( "overf" );
+   
+      $('#dd_menu_busqueda').selectmenu({change:mobileMenu2}).selectmenu( "menuWidget" ).addClass( "overf" );
+   }				
+   
+   function mobileMenu2(e,d) { 	
+   
+   
+   
+   
+       var url = d.item.value;
+       var cat_id = d.item.element[0].id;
+       setFilterAndGoToMobile(cat_id,url);
+       eraseCookie("satfilter");
+       createCookie("satfilter", cat_id, 365);	
+       enviarLink (url);
+   }
+   
+   function msieversion() {
+       var ua = window.navigator.userAgent
+       var msie = ua.indexOf ("MSIE ")
+       if ( msie > 0 )      
+          return parseInt (ua.substring (msie+5, ua.indexOf (".", msie )))
+       else                 
+         return 0
+   }
+        
+   function validaNavbarIE(){
+    var ua = String(navigator.userAgent);		
+    if(ua.indexOf("Firefox/") < 0 
+       && ua.indexOf("Chrome/") < 0
+       && ua.indexOf("Opera/") < 0
+       && ua.indexOf("Safari/") < 0){			
+           $(".enlace_f").hide();			
+           $(".enlace_i").show();		
+           
+   
+           if (msieversion()!=9){			
+               $(".enlace_i9").hide();
+           } else {
+               $(".enlace_f9").hide();	
+           }
+       }else { 
+               $(".enlace_i9").hide();
+       }
+   }
+       
+   validaNavbarIE();
+   $(document).ready(ajusteMenu);
+   
+   function ajusteMenu(){
+        $('#dd_menu').selectmenu({change:mobileMenu});	
+        $('#mob_menu_select').selectmenu({change:mobileMenu});
+   }                 
+   var myElem = document.getElementById('myElement');         
+   
+   if (myElem) {
+     var barra= parseInt($( "#myElement" ).css("width"));  
+     if (barra<=480){
+     try {  
+          var iframetoloadTopPosition = jQuery('#breadcrumbs').offset().top;
+          if (iframetoloadTopPosition!=0 )
+               jQuery('html, body').animate({scrollTop: iframetoloadTopPosition}, 800);	
+         } catch(err) {}
+      }
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    function mobileMenuFix()
+   { 
+    try {  
+     $( ".advanced_search_autoc" ).hide();
+     $( ".ui-menu-item" ).hide();
+     $( ".ui-autocomplete" ).hide();
+    } catch(err) {}     
+   
+    try { 
+      $( "#desktopformE #mob_search_inputE" ).autocomplete('disable');
+       $( "#desktopformE #mob_search_inputE" ).autocomplete('enable');
+    } catch(err) {}     
+   
+    $('#mob_menu_select').selectmenu("destroy").selectmenu();
+    $('#mob_menu_select').selectmenu({change:mobileMenu});
+    try { 
+     $('#dd_menu').selectmenu("destroy").selectmenu();
+     $('#dd_menu').selectmenu({change:mobileMenu});
+    } catch(err) {}  
+     try { 
+     $('#dd_menu_busqueda').selectmenu("destroy").selectmenu();
+     $('#dd_menu_busqueda').selectmenu({change:mobileMenu2}).selectmenu( "menuWidget" ).addClass( "overf" );
+    } catch(err) {}
+    
+    try { 
+     $('#mob_menu_selectBusqueda').selectmenu("destroy").selectmenu();
+     $('#mob_menu_selectBusqueda').selectmenu({change:mobileMenu2}).selectmenu( "menuWidget" ).addClass( "overf" );
+    } catch(err) {}
+      
+    $('#select_foldername').selectmenu("destroy").selectmenu();  
+   
+    try {
+    $('#sortby_inline').selectmenu("destroy").selectmenu();
+    $('#sortby_inline').selectmenu({
+                       change:ordenamientoTipo 
+                   });
+   } catch(err) {}
+                   
+   
+   
+   
+   
+    
+    try {
+     $('#idx').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {  
+    $('#categorySelect').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {
+    $('#subcategorySelect').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {
+    $('#sortby').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {
+    $('#total').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try { 
+    $('#typevent').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {
+    $('#number').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {
+    $('#typeid').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    try {  
+    $('#ui-id-73').selectmenu("destroy").selectmenu();
+     } catch(err) {}
+    if(typeof changeCategoryFn=== 'function') { 
+            $('#categorySelect').selectmenu({change:changeCategoryFn});
+    } 
+    //$("div.ab_containb").css({"margin-left":"-300px"});
+    //$("div.ab_containb").addClass("rezised-menu");
+                                  
+    $(document).ready(changerezise);  	
+   }
+   
+   
+   
+   
+   
+   
+   jQuery(function($) {
+       if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
+           $('body').css('opacity', '1.0') 
+       }
+   })
+   
+   
+   
+   
+   
+   $(".pw").on('touchend', 'area', function () {
+      // window.location = $(this).attr("href");
+          var el = $(this);
+       var link = el.attr('href');
+       var tar = el.attr('target');
+       
+       window.open(link,tar);
+   });
+   
+   
+   
+   
+   
+   if (!isMobile.any()){
+   $('.topnav>li a.dec').each(function(){ 
+       var wid=$(this).width()+30;
+       $(this).css('width',wid+'px');
+   });
+   }
+   
+    
+   if (!isMobile.any()){
+   $( ".topnav li " ).hover(
+     function() {          
+        
+       $( this ).find("span").each(function(index) {	             
+                $(this ).css("font-weight", "bold");
+                if (index == 0){
+                 $( this ).animate({
+                    fontSize : "38px",				  
+                   }, 50, function() {				 
+                   });		 
+                } 			  
+                if (index == 1){			 
+                 $( this ).animate({
+                    fontSize : "15px",				  
+                   }, 50, function() {				 
+                   });		 
+                } 			  
+       });			
+     }, function() {  
+         var negrita = $( this ).find("a").css("font-weight");  	    
+        $( this ).find("span").each(function(index) {	 
+                 if (index == 0){
+                 $(this ).css("font-weight", "normal");		   	       
+                 $( this ).animate({
+                    fontSize : "36px"
+                   }, 50, function() {				 
+                   });		 
+                } 			  
+                if (index == 1){			 
+                $(this ).css("font-weight", negrita);		   	       
+                 $( this ).animate({
+                    fontSize : "13px"					  
+                   }, 50, function() {				 
+                   });		 
+                }
+             
+             $( this ).css("font-size","");         		 
+             $( this ).css("font-weight","");         		 
+       });				 	 	 
+     }
+   );
+   }
+   
+   
+   
+   </script>
+   
+   
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+   
+     ga('create', 'UA-3112836-17', 'auto');
+     ga('send', 'pageview');
+   
+   </script>
+   
+   
+               </div>
+</footer>
+{%endmacro%}
